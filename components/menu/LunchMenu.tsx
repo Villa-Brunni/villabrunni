@@ -103,9 +103,7 @@ export default function LunchMenu({
             </span>
           </div>
 
-          <p className="mt-2 text-xs text-[#777762] sm:text-sm">
-            Eläkeläiset 12,80 €
-          </p>
+         
         </div>
 
         {/* Lunch pricing and buffet information */}
@@ -152,9 +150,7 @@ export default function LunchMenu({
                     Eläkeläiset
                   </p>
 
-                  <p className="mt-1 text-sm text-[#777762]">
-                    Klo 13.00–14.30
-                  </p>
+                
                 </div>
 
                 <span className="whitespace-nowrap font-semibold text-[#626a3a]">

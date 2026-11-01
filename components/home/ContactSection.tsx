@@ -8,9 +8,9 @@ const restaurant = {
 };
 
 const openingHours = [
-  { day: "Maanantai–Torstai", hours: "10:30-21" },
-  { day: "Perjantai", hours: "10:30-16:00" },
-  { day: "Lauantai", hours: "11:00-16:00" },
+  { day: "Maanantai–Torstai", hours: "10:30-21:00" },
+  { day: "Perjantai", hours: "10:30-4:00" },
+  { day: "Lauantai", hours: "11:00-4:00" },
   { day: "sunnuntai", hours: "11:00-21:00" },
 ];
 
