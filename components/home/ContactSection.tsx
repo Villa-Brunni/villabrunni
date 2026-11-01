@@ -2,14 +2,16 @@ import { Clock, MapPin, Phone } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const restaurant = {
-  address: "Lisää ravintolan katuosoite",
-  phone: "+358XXXXXXXXX",
+  address: "Isoseppälä 14, 01800 Klaukkala",
+  phone: "+358 451497181",
   mapUrl: "https://www.google.com/maps?q=Villa+Brunni&output=embed",
 };
 
 const openingHours = [
-  { day: "Maanantai–perjantai", hours: "10.30–14.30" },
-  { day: "Lauantai–sunnuntai", hours: "À la carte" },
+  { day: "Maanantai–Torstai", hours: "10:30-21" },
+  { day: "Perjantai", hours: "10:30-16:00" },
+  { day: "Lauantai", hours: "11:00-16:00" },
+  { day: "sunnuntai", hours: "11:00-21:00" },
 ];
 
 export default function ContactSection() {
@@ -41,8 +43,8 @@ export default function ContactSection() {
             </h2>
 
             <p className="mt-4 leading-7 text-olive-dark/75">
-              Tule nauttimaan herkullisesta ruoasta ja
-              viihtyisästä tunnelmasta Villa Brunniin.
+              Tule nauttimaan herkullisesta ruoasta ja viihtyisästä tunnelmasta
+              Villa Brunniin.
             </p>
           </div>
 
@@ -53,9 +55,7 @@ export default function ContactSection() {
 
             <div>
               <h3 className="font-semibold text-olive-dark">Osoite</h3>
-              <p className="mt-1 text-olive-dark/75">
-                {restaurant.address}
-              </p>
+              <p className="mt-1 text-olive-dark/75">{restaurant.address}</p>
             </div>
           </div>
 
@@ -77,9 +77,7 @@ export default function ContactSection() {
             <Clock className="mt-1 size-5 shrink-0 text-olive" />
 
             <div className="w-full">
-              <h3 className="font-semibold text-olive-dark">
-                Aukioloajat
-              </h3>
+              <h3 className="font-semibold text-olive-dark">Aukioloajat</h3>
 
               <div className="mt-2 space-y-2">
                 {openingHours.map((item) => (
@@ -91,6 +89,21 @@ export default function ContactSection() {
                     <span>{item.hours}</span>
                   </div>
                 ))}
+                <div className="mt-5 rounded-lg border border-gold/40 bg-gold/10 p-4">
+                  <h4 className="font-semibold text-olive-dark">
+                    Myöhäisillan menu
+                  </h4>
+
+                  <p className="mt-2 text-sm leading-6 text-olive-dark/75">
+                    Perjantaisin ja lauantaisin klo 21:00 alkaen tarjoilemme
+                    erillistä myöhäisillan menua.
+                  </p>
+
+                  <p className="mt-2 text-sm font-medium text-olive-dark">
+                    Keittiö suljetaan 30 minuuttia ennen ravintolan
+                    sulkemisaikaa.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

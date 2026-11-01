@@ -69,10 +69,10 @@ export default function LunchMenu({
               •
             </span>
 
-            <span className="flex items-center gap-2">
+            {/* <span className="flex items-center gap-2">
               <Clock className="size-4 text-[#737b42]" />
               Ma–Pe 10.30–14.30
-            </span>
+            </span> */}
           </div>
 
           <p className="mt-2 text-xs text-[#777762] sm:text-sm">

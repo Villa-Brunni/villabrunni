@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-[540px] items-center justify-center overflow-hidden bg-olive-dark px-5 py-20 text-center text-white sm:min-h-[620px] sm:px-8">
       <Image
-        src="/images/restaurant.jpg"
+        src="/Images/restaurant.jpg"
         alt="Villa Brunni Trattorian ravintolasali"
         fill
         priority
@@ -34,7 +34,7 @@ export default function Hero() {
             href="/lounas"
             className="inline-flex min-h-12 items-center justify-center rounded-md bg-gold px-8 py-3 text-sm font-semibold text-olive-dark transition-colors hover:bg-gold/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
           >
-            Tutustu lounasbuffetiin
+            Lounas Buffet
           </Link>
 
           <Link
