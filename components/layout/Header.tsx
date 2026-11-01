@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 
-const phone = "+358 451497181";
+const phone = " +358 442442265";
 
 const links = [
   { label: "Koti", href: "/" },
