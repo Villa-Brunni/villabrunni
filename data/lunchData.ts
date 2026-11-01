@@ -6,20 +6,20 @@ export const lunchData: LunchDay[] = [
     label: "Maanantai",
     items: [
       {
-        name: "Päivän keitto",
-        description: "Päivittäin vaihtuva keitto.",
+        name: "Tomaattikeitto (L, G)",
+        description: "",
       },
       {
-        name: "Grillattua kanaa",
-        description: "Yrttimarinoitua kanaa ja uuniperunoita.",
+        name: "Kampela, tartarkastike (L)",
+        description: "",
       },
       {
-        name: "Kasvisrisotto",
-        description: "Täyteläinen risotto kauden kasviksilla.",
+        name: "Porsaanniska punaviinikastikkeessa (L, G)",
+        description: "",
       },
       {
-        name: "Päivän jälkiruoka",
-        description: "Makea päätös lounaalle.",
+        name: "Döner kebab (L, G)",
+        description: "",
       },
     ],
   },
@@ -28,20 +28,20 @@ export const lunchData: LunchDay[] = [
     label: "Tiistai",
     items: [
       {
-        name: "Tomaattikeitto",
-        description: "Pehmeä tomaattikeitto tuoreilla yrteillä.",
+        name: "Linssikeitto (L, G)",
+        description: "",
       },
       {
-        name: "Kermainen kanapasta",
-        description: "Kanaa, kermaista kastiketta ja tuoreita yrttejä.",
+        name: "Kana tikka (L, G)",
+        description: "",
       },
       {
-        name: "Kasvislasagne",
-        description: "Kasviksia, tomaattikastiketta ja juustoa.",
+        name: "Porsaanleike, valkosipulimajoneesi (VS)",
+        description: "",
       },
       {
-        name: "Päivän jälkiruoka",
-        description: "Kysy päivän vaihtoehto.",
+        name: "Döner kebab (L, G)",
+        description: "",
       },
     ],
   },
@@ -50,20 +50,20 @@ export const lunchData: LunchDay[] = [
     label: "Keskiviikko",
     items: [
       {
-        name: "Päivän keitto",
-        description: "Päivittäin vaihtuva keitto.",
+        name: "Lohikeitto (L, G)",
+        description: "",
       },
       {
-        name: "Lihapullat tomaattikastikkeessa",
-        description: "Italialaistyylisiä lihapullia ja pastaa.",
+        name: "Lihapullat, pippurikastike (L, G)",
+        description: "",
       },
       {
-        name: "Kasviscurry",
-        description: "Mausteinen kasvisruoka riisin kanssa.",
+        name: "Wieninleike (L, G)",
+        description: "",
       },
       {
-        name: "Päivän jälkiruoka",
-        description: "Makea päätös lounaalle.",
+        name: "Döner kebab (L, G)",
+        description: "",
       },
     ],
   },
@@ -72,20 +72,20 @@ export const lunchData: LunchDay[] = [
     label: "Torstai",
     items: [
       {
-        name: "Kasviskeitto",
-        description: "Päivittäin vaihtuva kasviskeitto.",
+        name: "Hernekeitto (L, G)",
+        description: "",
       },
       {
-        name: "Uunilohi",
-        description: "Paistettua lohta, perunoita ja tillikastiketta.",
+        name: "Pyttipannu (L, G)",
+        description: "",
       },
       {
-        name: "Pinaattipasta",
-        description: "Pinaattia ja kermaista parmesaanikastiketta.",
+        name: "Oskarinleike choronkastikkeella (L, G)",
+        description: "",
       },
       {
-        name: "Päivän jälkiruoka",
-        description: "Kysy päivän vaihtoehto.",
+        name: "Döner kebab (L, G)",
+        description: "",
       },
     ],
   },
@@ -94,20 +94,20 @@ export const lunchData: LunchDay[] = [
     label: "Perjantai",
     items: [
       {
-        name: "Päivän keitto",
-        description: "Päivittäin vaihtuva keitto.",
+        name: "Kanakeitto (L, G)",
+        description: "",
       },
       {
-        name: "Päivän pizza",
-        description: "Päivän pizzavalikoima.",
+        name: "Lohi hollandaisekastikkeella (L, G)",
+        description: "",
       },
       {
-        name: "Grillattua kanaa",
-        description: "Yrttimarinoitua kanaa ja kauden kasviksia.",
+        name: "Hawaijinleike (L, G)",
+        description: "",
       },
       {
-        name: "Päivän jälkiruoka",
-        description: "Makea päätös lounaalle.",
+        name: "Döner kebab (L, G)",
+        description: "",
       },
     ],
   },

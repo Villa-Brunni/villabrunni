@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 
-const phone = "+358XXXXXXXXX";
+const phone = "+358 451497181";
 
 const links = [
   { label: "Koti", href: "/" },
@@ -26,7 +26,7 @@ export default function Header() {
           onClick={() => setMenuOpen(false)}
         >
           <Image
-            src="/images/logo.png"
+            src="/Images/logo.png"
             alt="Villa Brunni Trattoria"
             width={210}
             height={70}
