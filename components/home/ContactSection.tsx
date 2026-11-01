@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator";
 
 const restaurant = {
   address: "Isoseppälä 14, 01800 Klaukkala",
-  phone: "+358 451497181",
+  phone: "+358 442442265",
   mapUrl: "https://www.google.com/maps?q=Villa+Brunni&output=embed",
 };
 
