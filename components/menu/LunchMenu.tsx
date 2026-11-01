@@ -1,13 +1,17 @@
+
 "use client";
 
 import { useState } from "react";
 import { format, parseISO } from "date-fns";
 import { fi } from "date-fns/locale";
-import { CalendarDays, Clock } from "lucide-react";
+import {
+  CalendarDays,
+  Clock,
+  Utensils,
+} from "lucide-react";
+
 import { Weekday } from "@/types/lunch.type";
 import { lunchData } from "@/data/lunchData";
-
-
 
 const weekdays: Weekday[] = [
   "maanantai",
@@ -29,6 +33,30 @@ type LunchMenuProps = {
   dates: string[];
   initialDay: Weekday;
 };
+
+const buffetOptions = [
+  "Pizzabuffet",
+  "Salaatti",
+  "Keitto",
+  "Lämpimät ruoat",
+  "Juomat",
+  "Kahvi ja jälkiruoka",
+];
+
+const lunchOptions = [
+  {
+    name: "Lehtipihvi ja ranskalaiset",
+    price: "15,90 €",
+  },
+  {
+    name: "Kuhafile ja ranskalaiset",
+    price: "14,90 €",
+  },
+  {
+    name: "Double Smash Burger ja ranskalaiset",
+    price: "13,90 €",
+  },
+];
 
 export default function LunchMenu({
   dates,
@@ -63,21 +91,162 @@ export default function LunchMenu({
           </p>
 
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-[#55583d]">
-            <span className="font-semibold">13,50 €</span>
+            <span className="font-semibold">13,90 €</span>
 
             <span className="hidden text-[#b3a66b] sm:inline">
               •
             </span>
 
-            {/* <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2">
               <Clock className="size-4 text-[#737b42]" />
               Ma–Pe 10.30–14.30
-            </span> */}
+            </span>
           </div>
 
           <p className="mt-2 text-xs text-[#777762] sm:text-sm">
-            Eläkeläisen hinta 12,00 €
+            Eläkeläiset 12,80 €
           </p>
+        </div>
+
+        {/* Lunch pricing and buffet information */}
+        <div className="mb-10 grid gap-5 md:mb-14 md:grid-cols-2 md:gap-6">
+
+          {/* Buffet pricing */}
+          <div className="rounded-2xl border border-[#e0dfcc] bg-white p-5 shadow-sm sm:p-7">
+            <div className="mb-5 flex items-center gap-3">
+              <div className="flex size-11 items-center justify-center rounded-xl bg-[#e9eadb]">
+                <Utensils className="size-5 text-[#626a3a]" />
+              </div>
+
+              <div>
+                <h2 className="font-serif text-2xl font-semibold text-[#42482b]">
+                  Lounasbuffet
+                </h2>
+
+                <p className="mt-1 text-sm text-[#777762]">
+                  Ma–Pe klo 10.30–14.30
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center justify-between gap-4 border-b border-[#e8e5d5] pb-4">
+                <div>
+                  <p className="font-semibold text-[#42482b]">
+                    Lounas
+                  </p>
+
+                  <p className="mt-1 text-sm text-[#777762]">
+                    Koko buffetvalikoima
+                  </p>
+                </div>
+
+                <span className="whitespace-nowrap font-semibold text-[#626a3a]">
+                  13,90 €
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between gap-4 border-b border-[#e8e5d5] pb-4">
+                <div>
+                  <p className="font-semibold text-[#42482b]">
+                    Eläkeläiset
+                  </p>
+
+                  <p className="mt-1 text-sm text-[#777762]">
+                    Klo 13.00–14.30
+                  </p>
+                </div>
+
+                <span className="whitespace-nowrap font-semibold text-[#626a3a]">
+                  12,80 €
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="font-semibold text-[#42482b]">
+                    Salaatti- ja keittolounas
+                  </p>
+
+                  <p className="mt-1 text-sm text-[#777762]">
+                    Salaatti, keitto, juomat,
+                    kahvi ja jälkiruoka
+                  </p>
+                </div>
+
+                <span className="whitespace-nowrap font-semibold text-[#626a3a]">
+                  12,50 €
+                </span>
+              </div>
+            </div>
+
+            <div className="mt-6 border-t border-[#e8e5d5] pt-5">
+              <p className="mb-3 text-sm font-semibold text-[#42482b]">
+                Lounasbuffet sisältää
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {buffetOptions.map((option) => (
+                  <span
+                    key={option}
+                    className="rounded-full border border-[#e0dfcc] bg-[#faf9f2] px-3 py-1.5 text-xs text-[#55583d] sm:text-sm"
+                  >
+                    {option}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <p className="mt-5 text-xs text-[#777762]">
+              0–2-vuotiaat lapset ruokailevat ilmaiseksi.
+            </p>
+          </div>
+
+          {/* Additional lunch options */}
+          <div className="rounded-2xl border border-[#e0dfcc] bg-white p-5 shadow-sm sm:p-7">
+            <div className="mb-5">
+              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#929768]">
+                Lounas
+              </p>
+
+              <h2 className="font-serif text-2xl font-semibold text-[#42482b]">
+                Muut lounasannokset
+              </h2>
+
+              <p className="mt-2 text-sm leading-6 text-[#777762]">
+                Herkullisia vaihtoehtoja lounasbuffetin
+                lisäksi.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {lunchOptions.map((item) => (
+                <div
+                  key={item.name}
+                  className="flex items-center justify-between gap-4 border-b border-[#e8e5d5] pb-4 last:border-b-0"
+                >
+                  <h3 className="font-medium leading-6 text-[#42482b]">
+                    {item.name}
+                  </h3>
+
+                  <span className="whitespace-nowrap font-semibold text-[#626a3a]">
+                    {item.price}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-3 rounded-xl bg-[#f5f5e9] p-4">
+              <p className="text-sm leading-6 text-[#55583d]">
+                Annokset sisältävät salaatin, juomat,
+                kahvin ja jälkiruoan.
+              </p>
+            </div>
+
+            <p className="mt-5 text-xs text-[#777762]">
+              Hinnat voimassa 31.12.2026 asti.
+            </p>
+          </div>
         </div>
 
         {/* Weekday selector and menu */}
@@ -181,8 +350,9 @@ export default function LunchMenu({
               {/* Menu information */}
               <div className="mt-6 space-y-2 border-t border-[#e8e5d5] pt-5 text-center text-xs leading-5 text-[#777762] sm:text-sm md:mt-8 md:pt-6">
                 <p>
-                  Lounas sisältää salaatin, keiton, lämpimän
-                  ruoan, jälkiruoan sekä teen ja kahvin.
+                  Lounas sisältää salaatin, keiton,
+                  lämpimän ruoan, jälkiruoan sekä
+                  teen ja kahvin.
                 </p>
 
                 <p>
