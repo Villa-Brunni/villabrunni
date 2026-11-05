@@ -63,6 +63,9 @@
   --primary: #59683b;
   --primary-foreground: #ffffff;
   --ring: #59683b;
+  --border: #dedfce;
+  --muted: #efede5;
+  --muted-foreground: #69705d;
 
   /* --background: oklch(1 0 0); */
   /* --foreground: oklch(0.145 0 0); */
@@ -139,10 +142,79 @@
 
   body {
     @apply bg-cream text-olive-dark antialiased;
+    
+  }
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 110px;
   }
+
+  body {
+    @apply bg-cream text-olive-dark antialiased;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: #c5a66d;
+    color: #303b25;
+  }
+}
+
+/* Restaurant menu typography */
+.menu-heading {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+}
+
+/* Hide horizontal navigation scrollbar */
+.menu-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.menu-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth category transitions */
+.menu-section {
+  scroll-margin-top: 110px;
+}
+
+/* Responsive menu */
+@media (max-width: 640px) {
+  .menu-heading {
+    letter-spacing: 0.15em;
+  }
+
+  .menu-section {
+    scroll-margin-top: 100px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 }
