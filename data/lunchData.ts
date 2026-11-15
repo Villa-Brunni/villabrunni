@@ -37,7 +37,7 @@ export const lunchData: LunchDay[] = [
         description: "",
       },
       {
-        name: "Havaijinleike (L)",
+        name: "Hawaijinleike (L)",
         description: "",
       },
       {
