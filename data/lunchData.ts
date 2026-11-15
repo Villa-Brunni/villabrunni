@@ -7,23 +7,19 @@ export const lunchData: LunchDay[] = [
     label: "Maanantai",
     items: [
       {
-        name: "Kermainen rapukeitto",
+        name: "Naudanliha-kasviskeitto (L, G)",
         description: "",
       },
       {
-        name: "Kana rintafilee kapriskastikkeessa",
+        name: "Fish (L) and chips (L, G), tartarkastike (VL, G)",
         description: "",
       },
       {
-        name: "Porsaanleike, valkosipulimajoneesi",
+        name: "Porsaan BBQ-kastike (L, G, VS)",
         description: "",
       },
       {
-        name: "Döner kebab (L, G)",
-        description: "",
-      },
-      {
-        name: "Snickers-mousse",
+        name: "Minttusuklaamousse (L, G)",
         description: "",
       },
     ],
@@ -33,23 +29,19 @@ export const lunchData: LunchDay[] = [
     label: "Tiistai",
     items: [
       {
-        name: "Tomaatti-vuohenjuustokeitto",
+        name: "Kukkakaalisosekeitto (L, G)",
         description: "",
       },
       {
-        name: "Marryme kanarintafilee",
+        name: "Butter chicken (L, G, VS)",
         description: "",
       },
       {
-        name: "Wieninleike, sienikastike",
+        name: "Havaijinleike (L)",
         description: "",
       },
       {
-        name: "Döner kebab (L, G)",
-        description: "",
-      },
-      {
-        name: "Mansikkajogurtti",
+        name: "Mansikkasmoothie (L, G)",
         description: "",
       },
     ],
@@ -59,23 +51,23 @@ export const lunchData: LunchDay[] = [
     label: "Keskiviikko",
     items: [
       {
-        name: "Lohikeitto",
+        name: "Lohikeitto (L, G)",
         description: "",
       },
       {
-        name: "Jauhelihapihvi, tomaattikastike",
+        name: "Chili con carne (L, G)",
         description: "",
       },
       {
-        name: "Porsaanleike, sinappikastike",
+        name: "Perunamuusi (L, G)",
         description: "",
       },
       {
-        name: "Döner kebab (L, G)",
+        name: "Svitsenleike (L)",
         description: "",
       },
       {
-        name: "Tiramisu",
+        name: "Porkkanakakku (L), vaniljakastike (L, G)",
         description: "",
       },
     ],
@@ -85,23 +77,23 @@ export const lunchData: LunchDay[] = [
     label: "Torstai",
     items: [
       {
-        name: "Hernekeitto",
+        name: "Hernekeitto (L, G)",
         description: "",
       },
       {
-        name: "Muikku, tillikermaviilikastike",
+        name: "Uunimakkara (G)",
         description: "",
       },
       {
-        name: "BBQ-possu",
+        name: "Perunamuusi (L, G)",
         description: "",
       },
       {
-        name: "Döner kebab (L, G)",
+        name: "Porsaanleike (L), pippurikastike (L, G)",
         description: "",
       },
       {
-        name: "Pannukakku, vaniljavaahto, mansikkahillo",
+        name: "Talon letut (L), mansikkahillo (VL, G), vaniljavaahto (L, G)",
         description: "",
       },
     ],
@@ -111,23 +103,19 @@ export const lunchData: LunchDay[] = [
     label: "Perjantai",
     items: [
       {
-        name: "Kermainen kanakeitto",
+        name: "Tom Yum -Rapukeitto (M, G)",
         description: "",
       },
       {
-        name: "Lohi chimichurrikastikkeella",
+        name: "Lohi Tilli kermakastike (L, G)",
         description: "",
       },
       {
-        name: "Karamellipossu",
+        name: "Oskarinleike (L), choronkastike",
         description: "",
       },
       {
-        name: "Döner kebab (L, G)",
-        description: "",
-      },
-      {
-        name: "Hedelmäsalaatti",
+        name: "Mangolassi (L, G)",
         description: "",
       },
     ],
