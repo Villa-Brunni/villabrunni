@@ -40,7 +40,7 @@ const buffetOptions = [
   "Keitto",
   "Lämpimät ruoat",
   "Juomat",
-  "Kahvi ja jälkiruoka",
+  "Kahvi ja jälkiruoka"
 ];
 
 const lunchOptions = [
@@ -346,7 +346,7 @@ export default function LunchMenu({
               {/* Menu information */}
               <div className="mt-6 space-y-2 border-t border-[#e8e5d5] pt-5 text-center text-xs leading-5 text-[#777762] sm:text-sm md:mt-8 md:pt-6">
                 <p>
-                  Lounas sisältää salaatin, keiton,
+                  Lounas sisältää Döner Kebab,Pizza buffet, salaatin, keiton,
                   lämpimän ruoan, jälkiruoan sekä
                   teen ja kahvin.
                 </p>
